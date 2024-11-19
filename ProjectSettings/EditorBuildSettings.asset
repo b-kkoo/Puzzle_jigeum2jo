@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/01.Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/01.Scenes/Test/PckUITestScene.unity
     guid: 6661061eb1de6de4cab7a741a7b7082d
+  - enabled: 1
+    path: Assets/01.Scenes/Test/MapTestScene.unity
+    guid: c7870cc446ce98e4997357edd3a2a302
   m_configObjects: {}

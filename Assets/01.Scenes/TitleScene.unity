@@ -3061,6 +3061,16 @@ PrefabInstance:
       objectReference: {fileID: 203901480}
     - target: {fileID: 7503425301763202102, guid: 238c575b3df18a84790e7faa77ae2d3f,
         type: 3}
+      propertyPath: MenuBtn
+      value: 
+      objectReference: {fileID: 170709029}
+    - target: {fileID: 7503425301763202102, guid: 238c575b3df18a84790e7faa77ae2d3f,
+        type: 3}
+      propertyPath: RetryBtn
+      value: 
+      objectReference: {fileID: 1330539408}
+    - target: {fileID: 7503425301763202102, guid: 238c575b3df18a84790e7faa77ae2d3f,
+        type: 3}
       propertyPath: titleScreen
       value: 
       objectReference: {fileID: 744426859}

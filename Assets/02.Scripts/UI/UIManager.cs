@@ -8,12 +8,13 @@ public enum SceneIndex
 }
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject titleScreen;
-    [SerializeField] private GameObject UIMenu;
+    [SerializeField] private GameObject TitleUI;
+    [SerializeField] private GameObject MenuUI;
 
     [SerializeField] private GameObject MenuBtn;
 
     [SerializeField] private GameObject RetryBtn;
+    [SerializeField] private Transform canvas;
 
     public static UIManager instance;
 
@@ -28,6 +29,16 @@ public class UIManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void StartCanvasShow()
+    {
+        Instantiate(TitleUI, canvas);
+    }
+
+    public void MenuCanvasShow()
+    {
+        Instantiate(MenuUI, canvas);
     }
 
     public void RetryButton()
@@ -48,10 +59,12 @@ public class UIManager : MonoBehaviour
     }
     public void OnMenu()
     {
-       bool isMenuOpen = UIMenu.activeSelf;
-       UIMenu.SetActive(!isMenuOpen);
-       Time.timeScale = isMenuOpen ? 1 : 0;
+        NowScene();
+        bool isMenuOpen = UIMenu.activeSelf;
+        UIMenu.SetActive(!isMenuOpen);
+        Time.timeScale = isMenuOpen ? 1 : 0;
     }
+
     public void QuitGameButton()
     {
 #if UNITY_EDITOR
@@ -66,7 +79,8 @@ public class UIManager : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
-            
+            MenuBtn.SetActive(false);
+            RetryBtn.SetActive(false);
         }
     }
 }
