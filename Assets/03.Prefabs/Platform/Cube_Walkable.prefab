@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5133070412210433053}
   - component: {fileID: 3837500594994424486}
   m_Layer: 0
-  m_Name: Walkable
+  m_Name: Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
