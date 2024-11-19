@@ -11,7 +11,7 @@ public class MenuButton : MonoBehaviour
 
         if (menucanvas == null)// 만약 메뉴캔버스가 없다면
         {
-            menucanvas = UIManager.instance.Show("MenuCanvas"); //생성
+            menucanvas = GameManager.instance.UIManager.Show("MenuCanvas"); //생성
         }
         else
         {

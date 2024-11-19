@@ -6,11 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
-    private UIManager uiManager;
     public UIManager UIManager { get; set; }
-
-    private SoundManager soundManager;
     public SoundManager SoundManager { get; set; }
 
     [SerializeField] private GameObject uIManagerPrefab;
@@ -30,20 +26,20 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        uiManager = GetComponentInChildren<UIManager>();
-        if (uiManager == null)
+        UIManager = GetComponentInChildren<UIManager>();
+        if (UIManager == null)
         {
             GameObject uiManagerObject = Instantiate(uIManagerPrefab);
             uiManagerObject.transform.SetParent(transform); // GameManager의 자식으로 설정
-            uiManager = uiManagerObject.GetComponent<UIManager>();
+            UIManager = uiManagerObject.GetComponent<UIManager>();
         }
 
-        soundManager = GetComponentInChildren<SoundManager>();
-        if (soundManager == null)
+        SoundManager = GetComponentInChildren<SoundManager>();
+        if (SoundManager == null)
         {
             GameObject soundManagerObject = Instantiate(soundManagerPrefab);
             soundManagerObject.transform.SetParent(transform); // GameManager의 자식으로 설정
-            soundManager = soundManagerObject.GetComponent<SoundManager>();
+            SoundManager = soundManagerObject.GetComponent<SoundManager>();
         }
     }
 }
