@@ -11,7 +11,7 @@ public class MenuButton : MonoBehaviour
     {
         if (soundcanvas == null)
         {
-            soundcanvas = UIManager.instance.Show("SoundCanvas");
+            menucanvas = GameManager.instance.UIManager.Show("MenuCanvas"); //생성
         }
         else
         {
