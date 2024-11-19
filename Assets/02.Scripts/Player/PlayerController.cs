@@ -55,16 +55,6 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        // Vector3 screenPos = mainCamera.WorldToViewportPoint(transform.position);
-        // Vector3 targetScreenPos = mainCamera.WorldToViewportPoint(targetPosition);
-
-        // float screenDistance = Vector2.Distance(
-        //     new Vector2(screenPos.x, screenPos.y),
-        //     new Vector2(targetScreenPos.x, targetScreenPos.y)
-        // );
-        
-        // transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-
         if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
         {
             isMoving = false;
