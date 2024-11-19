@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path33
+      value: Path27
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -319,7 +319,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable33
+      value: Cube_Walkable27
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -343,7 +343,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 18766370}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &72148924
+--- !u!1001 &34611162
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path46
+      value: Path40
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -380,7 +380,7 @@ PrefabInstance:
         type: 3}
       propertyPath: possiblePaths.Array.data[1].target
       value: 
-      objectReference: {fileID: 1033475097}
+      objectReference: {fileID: 1033475098}
     - target: {fileID: 3970468369303906449, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -434,7 +434,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable46
+      value: Cube_Walkable40
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -446,17 +446,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25956954963b51f4b8535e3bf7f99b3f, type: 3}
---- !u!4 &72148925 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3970468369303906449, guid: 25956954963b51f4b8535e3bf7f99b3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 72148924}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &72148926 stripped
+--- !u!4 &34611163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5133070412210433053, guid: 25956954963b51f4b8535e3bf7f99b3f,
     type: 3}
-  m_PrefabInstance: {fileID: 72148924}
+  m_PrefabInstance: {fileID: 34611162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &34611164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3970468369303906449, guid: 25956954963b51f4b8535e3bf7f99b3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 34611162}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &160304206
 GameObject:
@@ -681,7 +681,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path42
+      value: Path36
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -761,7 +761,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable42
+      value: Cube_Walkable36
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -796,7 +796,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path40
+      value: Path34
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -876,7 +876,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable40
+      value: Cube_Walkable34
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -911,7 +911,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path34
+      value: Path28
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -991,7 +991,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable34
+      value: Cube_Walkable28
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1141,7 +1141,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path36
+      value: Path30
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1221,7 +1221,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable36
+      value: Cube_Walkable30
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1289,10 +1289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -1312,7 +1308,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path24_a
+      value: Path18_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1392,7 +1388,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable24
+      value: Cube_Walkable18
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1431,7 +1427,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path44
+      value: Path38
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1511,7 +1507,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable44
+      value: Cube_Walkable38
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1546,7 +1542,7 @@ GameObject:
   - component: {fileID: 423649945}
   - component: {fileID: 423649946}
   m_Layer: 0
-  m_Name: Path26_b
+  m_Name: Path20_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1579,10 +1575,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -1602,7 +1594,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path23_a
+      value: Path17_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1682,7 +1674,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable23
+      value: Cube_Walkable17
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -1725,7 +1717,7 @@ GameObject:
   - component: {fileID: 491770578}
   - component: {fileID: 491770579}
   m_Layer: 0
-  m_Name: Path25_b
+  m_Name: Path19_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1758,10 +1750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -1781,7 +1769,7 @@ GameObject:
   - component: {fileID: 507206024}
   - component: {fileID: 507206025}
   m_Layer: 0
-  m_Name: Path31_b
+  m_Name: Path25_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1814,10 +1802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -2159,7 +2143,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path29_a
+      value: Path23_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -2239,7 +2223,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable29
+      value: Cube_Walkable23
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -2311,10 +2295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -2334,7 +2314,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path25_a
+      value: Path19_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -2414,7 +2394,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable25
+      value: Cube_Walkable19
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -2453,7 +2433,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path45
+      value: Path39
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -2479,7 +2459,7 @@ PrefabInstance:
         type: 3}
       propertyPath: possiblePaths.Array.data[1].target
       value: 
-      objectReference: {fileID: 72148926}
+      objectReference: {fileID: 34611163}
     - target: {fileID: 3970468369303906449, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2533,7 +2513,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable45
+      value: Cube_Walkable39
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -2844,7 +2824,7 @@ GameObject:
   - component: {fileID: 931880533}
   - component: {fileID: 931880534}
   m_Layer: 0
-  m_Name: Path28_b
+  m_Name: Path22_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2877,10 +2857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -2900,7 +2876,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path31_a
+      value: Path25_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -2980,7 +2956,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable31
+      value: Cube_Walkable25
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -3138,6 +3114,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
+      propertyPath: isStair
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
+        type: 3}
       propertyPath: possiblePaths.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -3150,7 +3131,7 @@ PrefabInstance:
         type: 3}
       propertyPath: possiblePaths.Array.data[0].target
       value: 
-      objectReference: {fileID: 72148926}
+      objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: possiblePaths.Array.data[1].active
@@ -3388,14 +3369,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
-  possiblePaths: []
+  possiblePaths:
+  - target: {fileID: 1892240312}
+    active: 1
+  - target: {fileID: 798038216}
+    active: 1
 --- !u!1 &1168393292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3407,7 +3388,7 @@ GameObject:
   - component: {fileID: 1168393293}
   - component: {fileID: 1168393294}
   m_Layer: 0
-  m_Name: Path23_c
+  m_Name: Path17_c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3440,10 +3421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -3496,10 +3473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -3519,7 +3492,7 @@ GameObject:
   - component: {fileID: 1211181565}
   - component: {fileID: 1211181566}
   m_Layer: 0
-  m_Name: Path17_bridge
+  m_Name: Path11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3552,10 +3525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -3608,10 +3577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -3736,7 +3701,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path26_a
+      value: Path20_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -3816,7 +3781,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable26
+      value: Cube_Walkable20
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -3891,7 +3856,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path41
+      value: Path35
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -3971,7 +3936,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable41
+      value: Cube_Walkable35
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -4416,10 +4381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -4544,7 +4505,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path32
+      value: Path26
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -4634,7 +4595,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable32
+      value: Cube_Walkable26
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -4913,10 +4874,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -4936,7 +4893,7 @@ GameObject:
   - component: {fileID: 1609218755}
   - component: {fileID: 1609218756}
   m_Layer: 0
-  m_Name: Path23_b
+  m_Name: Path17_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4969,10 +4926,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -5098,7 +5051,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path38
+      value: Path32
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5178,7 +5131,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable38
+      value: Cube_Walkable32
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5213,7 +5166,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path30_a
+      value: Path24_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5293,7 +5246,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable30
+      value: Cube_Walkable24
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5332,7 +5285,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path37
+      value: Path31
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5412,7 +5365,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable37
+      value: Cube_Walkable31
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5447,7 +5400,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path35
+      value: Path29
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5527,7 +5480,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable35
+      value: Cube_Walkable29
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5562,7 +5515,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path27_a
+      value: Path21_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5642,7 +5595,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable27
+      value: Cube_Walkable21
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5705,7 +5658,7 @@ Transform:
   - {fileID: 1777391184}
   - {fileID: 406370309}
   - {fileID: 856591958}
-  - {fileID: 72148925}
+  - {fileID: 34611164}
   - {fileID: 1033475097}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5753,7 +5706,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path43
+      value: Path37
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5833,7 +5786,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable43
+      value: Cube_Walkable37
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -5908,7 +5861,7 @@ GameObject:
   - component: {fileID: 1871540442}
   - component: {fileID: 1871540443}
   m_Layer: 0
-  m_Name: Path29_b
+  m_Name: Path23_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5941,10 +5894,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -5997,16 +5946,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
   possiblePaths:
-  - target: {fileID: 6949829879239925965}
-    active: 1
   - target: {fileID: 1216038985}
     active: 1
 --- !u!1 &1885034194
@@ -6020,7 +5963,7 @@ GameObject:
   - component: {fileID: 1885034195}
   - component: {fileID: 1885034196}
   m_Layer: 0
-  m_Name: Path24_b
+  m_Name: Path18_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6053,10 +5996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -6215,10 +6154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -6238,7 +6173,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path28_a
+      value: Path22_a
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -6318,7 +6253,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable28
+      value: Cube_Walkable22
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -6357,7 +6292,7 @@ GameObject:
   - component: {fileID: 1941491268}
   - component: {fileID: 1941491269}
   m_Layer: 0
-  m_Name: Path27_b
+  m_Name: Path21_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6390,10 +6325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -6670,7 +6601,7 @@ GameObject:
   - component: {fileID: 2081603597}
   - component: {fileID: 2081603598}
   m_Layer: 0
-  m_Name: Path30_b
+  m_Name: Path24_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6703,10 +6634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -6726,7 +6653,7 @@ PrefabInstance:
     - target: {fileID: 2971352238989861194, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Path39
+      value: Path33
       objectReference: {fileID: 0}
     - target: {fileID: 3837500594994424486, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -6806,7 +6733,7 @@ PrefabInstance:
     - target: {fileID: 6043159502403952313, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
       propertyPath: m_Name
-      value: Cube_Walkable39
+      value: Cube_Walkable33
       objectReference: {fileID: 0}
     - target: {fileID: 7519546463770896913, guid: 25956954963b51f4b8535e3bf7f99b3f,
         type: 3}
@@ -6841,7 +6768,7 @@ GameObject:
   - component: {fileID: 8017505609263937338}
   - component: {fileID: 2107184339023311233}
   m_Layer: 0
-  m_Name: Path22
+  m_Name: Path16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6983,10 +6910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -7040,23 +6963,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7961131146960121138}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1041114631351725466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6949829879239925965}
-  - component: {fileID: 1301293273211283062}
-  m_Layer: 0
-  m_Name: Path11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &1128863372903310169
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7119,8 +7025,7 @@ Transform:
   m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6949829879239925965}
+  m_Children: []
   m_Father: {fileID: 634360257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1259446673204042445
@@ -7180,30 +7085,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7030660344501131752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1301293273211283062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041114631351725466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
-  walkPointOffset: 0.5
-  stairOffset: 0.4
-  isStair: 0
-  possiblePaths:
-  - target: {fileID: 4475711542672415937}
-    active: 1
-  - target: {fileID: 1874936804}
-    active: 1
 --- !u!23 &1415484856010817552
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7257,7 +7138,7 @@ GameObject:
   - component: {fileID: 8834469561963487126}
   - component: {fileID: 641632517349529901}
   m_Layer: 0
-  m_Name: Path20
+  m_Name: Path14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7296,10 +7177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -7332,21 +7209,6 @@ Transform:
   - {fileID: 8017505609263937338}
   m_Father: {fileID: 1282807496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2363291106337940821
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5677932973153806338}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5830370518641582553}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!65 &2858264596329363545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7381,36 +7243,12 @@ GameObject:
   - component: {fileID: 1415484856010817552}
   - component: {fileID: 6523655543476085207}
   m_Layer: 0
-  m_Name: Cube_Walkable19
+  m_Name: Cube_Walkable13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2956393949124647672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3853656081222013204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
-  walkPointOffset: 0.5
-  stairOffset: 0.4
-  isStair: 0
-  possiblePaths:
-  - target: {fileID: 3038831432116119271}
-    active: 1
-  - target: {fileID: 3161506872459708954}
-    active: 1
 --- !u!114 &3009076100471013606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7423,10 +7261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -7435,43 +7269,6 @@ MonoBehaviour:
     active: 1
   - target: {fileID: 4378149777691199004}
     active: 1
---- !u!114 &3023055526317060960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3857855967880001676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
-  walkPointOffset: 0.5
-  stairOffset: 0.4
-  isStair: 0
-  possiblePaths:
-  - target: {fileID: 3038831432116119271}
-    active: 1
---- !u!4 &3038831432116119271
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912319297633725360}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6487895631057969771}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &3097669725720964709
 GameObject:
   m_ObjectHideFlags: 0
@@ -7485,7 +7282,7 @@ GameObject:
   - component: {fileID: 1259446673204042445}
   - component: {fileID: 6365299100581231370}
   m_Layer: 0
-  m_Name: Cube_Walkable12
+  m_Name: Cube_NotWalkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7511,8 +7308,7 @@ Transform:
   m_LocalPosition: {x: 6, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6591834443693988931}
+  m_Children: []
   m_Father: {fileID: 634360257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3141831673365643985
@@ -7544,7 +7340,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6596034961080858075}
   - {fileID: 1211181565}
   m_Father: {fileID: 634360257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7556,21 +7351,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5719137479221523705}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &3161506872459708954
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5034994188349425485}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6627704797472263830}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &3167124996167436776
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7590,7 +7370,7 @@ GameObject:
   - component: {fileID: 4746906846157234066}
   - component: {fileID: 3719331736437561641}
   m_Layer: 0
-  m_Name: Path21
+  m_Name: Path15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7632,10 +7412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -7657,41 +7433,7 @@ GameObject:
   - component: {fileID: 1128863372903310169}
   - component: {fileID: 5082002789493097118}
   m_Layer: 0
-  m_Name: Cube_Walkable13
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &3853656081222013204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6591834443693988931}
-  - component: {fileID: 2956393949124647672}
-  m_Layer: 0
-  m_Name: Path15
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &3857855967880001676
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6596034961080858075}
-  - component: {fileID: 3023055526317060960}
-  m_Layer: 0
-  m_Name: Path17_start
+  m_Name: Cube_NotWalkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7708,7 +7450,7 @@ GameObject:
   - component: {fileID: 6611210479225374301}
   - component: {fileID: 3009076100471013606}
   m_Layer: 0
-  m_Name: Path18
+  m_Name: Path12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7792,21 +7534,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &4475711542672415937
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5772738028854923670}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5636624690552019021}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &4525502779742753859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7820,7 +7547,7 @@ GameObject:
   - component: {fileID: 381265460468359403}
   - component: {fileID: 5505341820647342380}
   m_Layer: 0
-  m_Name: Cube_Walkable16
+  m_Name: Cube_NotWalkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7881,7 +7608,7 @@ GameObject:
   - component: {fileID: 340428852560907286}
   - component: {fileID: 5590396373543546321}
   m_Layer: 0
-  m_Name: Cube_Walkable14
+  m_Name: Cube_NotWalkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7944,40 +7671,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3586515694726159134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4912319297633725360
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3038831432116119271}
-  - component: {fileID: 6364086775554662492}
-  m_Layer: 0
-  m_Name: Path16
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &5034994188349425485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3161506872459708954}
-  - component: {fileID: 6458781863317736609}
-  m_Layer: 0
-  m_Name: Path14
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!65 &5082002789493097118
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7999,30 +7692,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5503739375168133754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5772738028854923670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
-  walkPointOffset: 0.5
-  stairOffset: 0.4
-  isStair: 0
-  possiblePaths:
-  - target: {fileID: 2363291106337940821}
-    active: 1
-  - target: {fileID: 6949829879239925965}
-    active: 1
 --- !u!65 &5505341820647342380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8101,8 +7770,7 @@ Transform:
   m_LocalPosition: {x: 6, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4475711542672415937}
+  m_Children: []
   m_Father: {fileID: 634360257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5649442826769981682
@@ -8125,10 +7793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -8137,23 +7801,6 @@ MonoBehaviour:
     active: 1
   - target: {fileID: 8834469561963487126}
     active: 1
---- !u!1 &5677932973153806338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2363291106337940821}
-  - component: {fileID: 5958762168680457198}
-  m_Layer: 0
-  m_Name: Path13
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &5698283370140198593
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8209,7 +7856,7 @@ GameObject:
   - component: {fileID: 8419799581215457361}
   - component: {fileID: 4464548027482939798}
   m_Layer: 0
-  m_Name: Cube_Walkable18
+  m_Name: Cube_Walkable12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8228,7 +7875,7 @@ GameObject:
   - component: {fileID: 8426038250594710487}
   - component: {fileID: 4450450302114664976}
   m_Layer: 0
-  m_Name: Cube_Walkable17
+  m_Name: Cube_Walkable11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8247,24 +7894,7 @@ GameObject:
   - component: {fileID: 8366695784339839567}
   - component: {fileID: 4409051117309901704}
   m_Layer: 0
-  m_Name: Cube_Walkable15
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &5772738028854923670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4475711542672415937}
-  - component: {fileID: 5503739375168133754}
-  m_Layer: 0
-  m_Name: Path12
+  m_Name: Cube_NotWalkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8290,34 +7920,9 @@ Transform:
   m_LocalPosition: {x: 6, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2363291106337940821}
+  m_Children: []
   m_Father: {fileID: 634360257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5958762168680457198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5677932973153806338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
-  walkPointOffset: 0.5
-  stairOffset: 0.4
-  isStair: 0
-  possiblePaths:
-  - target: {fileID: 3161506872459708954}
-    active: 1
-  - target: {fileID: 4475711542672415937}
-    active: 1
 --- !u!1 &5963427054273612619
 GameObject:
   m_ObjectHideFlags: 0
@@ -8329,7 +7934,7 @@ GameObject:
   - component: {fileID: 4378149777691199004}
   - component: {fileID: 5674410343793524903}
   m_Layer: 0
-  m_Name: Path19
+  m_Name: Path13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8348,7 +7953,7 @@ GameObject:
   - component: {fileID: 7964327166745205150}
   - component: {fileID: 2858264596329363545}
   m_Layer: 0
-  m_Name: Cube_Walkable21
+  m_Name: Cube_Walkable15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8396,30 +8001,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6364086775554662492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4912319297633725360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
-  walkPointOffset: 0.5
-  stairOffset: 0.4
-  isStair: 0
-  possiblePaths:
-  - target: {fileID: 6596034961080858075}
-    active: 1
-  - target: {fileID: 6591834443693988931}
-    active: 1
 --- !u!65 &6365299100581231370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8441,30 +8022,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6458781863317736609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5034994188349425485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
-  walkPointOffset: 0.5
-  stairOffset: 0.4
-  isStair: 0
-  possiblePaths:
-  - target: {fileID: 6591834443693988931}
-    active: 1
-  - target: {fileID: 2363291106337940821}
-    active: 1
 --- !u!4 &6487895631057969771
 Transform:
   m_ObjectHideFlags: 0
@@ -8477,8 +8034,7 @@ Transform:
   m_LocalPosition: {x: 6, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3038831432116119271}
+  m_Children: []
   m_Father: {fileID: 634360257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6509435016199051988
@@ -8510,36 +8066,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &6591834443693988931
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3853656081222013204}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3125319082397063375}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!4 &6596034961080858075
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3857855967880001676}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3147006223000170839}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &6603926866249184809
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8575,25 +8101,9 @@ Transform:
   m_LocalPosition: {x: 6, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3161506872459708954}
+  m_Children: []
   m_Father: {fileID: 634360257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &6949829879239925965
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041114631351725466}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1177544869538407489}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &7030660344501131752
 Transform:
   m_ObjectHideFlags: 0
@@ -8630,10 +8140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ba91c582ad04f4291cb4b870eaf582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousBlock: {fileID: 0}
-  movingGround: 0
-  isButton: 0
-  dontRotate: 0
   walkPointOffset: 0.5
   stairOffset: 0.4
   isStair: 0
@@ -8655,7 +8161,7 @@ GameObject:
   - component: {fileID: 6196047908543961498}
   - component: {fileID: 2076345673477699677}
   m_Layer: 0
-  m_Name: Cube_Walkable20
+  m_Name: Cube_Walkable14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8773,7 +8279,7 @@ GameObject:
   - component: {fileID: 5698283370140198593}
   - component: {fileID: 448177801391425286}
   m_Layer: 0
-  m_Name: Cube_Walkable11
+  m_Name: Cube_NotWalkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8912,7 +8418,7 @@ GameObject:
   - component: {fileID: 4622233785325711670}
   - component: {fileID: 651079102106423537}
   m_Layer: 0
-  m_Name: Cube_Walkable22
+  m_Name: Cube_Walkable16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
