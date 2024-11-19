@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     [SerializeField ]List<GameObject> uiList = new List<GameObject>();
-    //[SerializeField] private Transform Canvas;
+    [SerializeField] private Transform Canvas;
 
     public static UIManager instance;
     private void Awake()
