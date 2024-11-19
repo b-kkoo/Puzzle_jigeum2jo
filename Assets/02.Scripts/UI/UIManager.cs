@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
         {
             Destroy(gameObject);
         }*/
-        GameManager.instance.UIManager = this;
+         GameManager.instance.UIManager = this;
     }
    
     public GameObject Show(string uiName)

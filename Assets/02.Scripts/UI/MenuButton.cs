@@ -6,17 +6,33 @@ using UnityEngine.SceneManagement;
 public class MenuButton : MonoBehaviour
 {
     private GameObject menucanvas;
+    private GameObject soundcanvas;
     public void ShowMenu()
     {
-
-        if (menucanvas == null)// 만약 메뉴캔버스가 없다면
+        if (soundcanvas == null)
         {
-            menucanvas = UIManager.instance.Show("MenuCanvas"); //생성
+            soundcanvas = UIManager.instance.Show("SoundCanvas");
         }
         else
         {
-            Destroy(menucanvas);
-            menucanvas = null; 
+            Destroy(soundcanvas);
+            soundcanvas = null;
         }
+       
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (currentSceneIndex != 0)
+        {
+            if (menucanvas == null)// 만약 메뉴캔버스가 없다면
+            {
+                menucanvas = UIManager.instance.Show("MenuCanvas"); //생성
+            }
+            else
+            {
+                Destroy(menucanvas);
+                menucanvas = null; 
+            }
+        }
+        
     }
+
 }
