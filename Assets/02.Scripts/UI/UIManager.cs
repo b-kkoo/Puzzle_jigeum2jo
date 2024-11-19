@@ -1,23 +1,19 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum SceneIndex
+/*public enum SceneIndex
 {
     TitleScene,
     GameScene,
-}
+}*/
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject TitleUI;
-    [SerializeField] private GameObject MenuUI;
-
-    [SerializeField] private GameObject MenuBtn;
-
-    [SerializeField] private GameObject RetryBtn;
-    [SerializeField] private Transform canvas;
+    [SerializeField ]List<GameObject> uiList = new List<GameObject>();
+    [SerializeField] private Transform Canvas;
 
     public static UIManager instance;
-
     private void Awake()
     {
         if (instance == null)
@@ -31,56 +27,20 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void StartCanvasShow()
+    public GameObject Show(string uiName)
     {
-        Instantiate(TitleUI, canvas);
-    }
-
-    public void MenuCanvasShow()
-    {
-        Instantiate(MenuUI, canvas);
-    }
-
-    public void RetryButton()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // 현재 진행중인 scene 불러오기
-    }
-    public void TitleButton()
-    {
-        SceneManager.LoadScene((int)SceneIndex.TitleScene);
-        // title scene 불러오기
-    }
-
-    public void StartGameButton()
-    {
-        SceneManager.LoadScene((int)SceneIndex.GameScene);
-        // 게임 Scene 불러오기
-    }
-    public void OnMenu()
-    {
-        NowScene();
-        bool isMenuOpen = MenuUI.activeSelf;
-        MenuUI.SetActive(!isMenuOpen);
-        Time.timeScale = isMenuOpen ? 1 : 0;
-    }
-
-    public void QuitGameButton()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // 에디터에서 플레이 중지
-#else
-    Application.Quit(); // 빌드 후 실행 시 게임 종료
-#endif
-    }
-
-    public void NowScene()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (currentSceneIndex == 0)
+        GameObject go = uiList.Find(obj => obj.name == uiName);
+        
+        /*GameObject existingUI = GameObject.Find(uiName);
+        if (existingUI != null)
         {
-            MenuBtn.SetActive(false);
-            RetryBtn.SetActive(false);
-        }
+            return existingUI; // 이미 존재하면 해당 UI 반환
+        }*/
+
+        // 새로 인스턴스화
+        GameObject instantiatedUI = Instantiate(go);
+        instantiatedUI.name = uiName; // 이름 지정 (복제본 방지)
+        //Instantiate(go);
+        return instantiatedUI;
     }
 }
