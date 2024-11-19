@@ -32,16 +32,16 @@ public class UIManager : MonoBehaviour
     {
         GameObject go = uiList.Find(obj => obj.name == uiName);
         
-        /*GameObject existingUI = GameObject.Find(uiName);
-        if (existingUI != null)
+        GameObject existingUI = GameObject.Find(uiName);
+        /*if (existingUI != null)
         {
             return existingUI; // 이미 존재하면 해당 UI 반환
         }*/
 
         // 새로 인스턴스화
-        GameObject instantiatedUI = Instantiate(go);
-        instantiatedUI.name = uiName; // 이름 지정 (복제본 방지)
-        //Instantiate(go);
-        return instantiatedUI;
+        /*GameObject instantiatedUI = Instantiate(go);
+        instantiatedUI.name = uiName; // 이름 지정 (복제본 방지)*/
+        Instantiate(go);
+        return go;
     }
 }

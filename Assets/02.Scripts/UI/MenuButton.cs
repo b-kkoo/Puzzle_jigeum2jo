@@ -16,7 +16,7 @@ public class MenuButton : MonoBehaviour
         else
         {
             Destroy(soundcanvas);
-            soundcanvas = null;
+            //soundcanvas = null;
         }
        
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -29,7 +29,7 @@ public class MenuButton : MonoBehaviour
             else
             {
                 Destroy(menucanvas);
-                menucanvas = null; 
+                //menucanvas = null; 
             }
         }
         

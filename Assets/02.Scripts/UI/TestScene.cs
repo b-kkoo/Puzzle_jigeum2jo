@@ -7,7 +7,7 @@ public class TestScene : MonoBehaviour
 {
     private void Start()
     {
-        UIManager.instance.Show("StartCanvas");
+        GameManager.instance.UIManager.Show(nameof(StartCanvas));
     }
 
     
