@@ -15,8 +15,8 @@ public class UIManager : MonoBehaviour
 
     public static UIManager instance;
     private void Awake()
-    {
-        if (instance == null)
+    { 
+        /*if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -24,9 +24,10 @@ public class UIManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
+        }*/
+        GameManager.instance.UIManager = this;
     }
-
+   
     public GameObject Show(string uiName)
     {
         GameObject go = uiList.Find(obj => obj.name == uiName);
