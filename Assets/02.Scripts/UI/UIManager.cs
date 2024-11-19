@@ -60,8 +60,8 @@ public class UIManager : MonoBehaviour
     public void OnMenu()
     {
         NowScene();
-        bool isMenuOpen = UIMenu.activeSelf;
-        UIMenu.SetActive(!isMenuOpen);
+        bool isMenuOpen = MenuUI.activeSelf;
+        MenuUI.SetActive(!isMenuOpen);
         Time.timeScale = isMenuOpen ? 1 : 0;
     }
 
