@@ -8,9 +8,14 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     private Camera mainCamera;
     private Vector3 targetPosition;
-    private bool isMoving;
+    public bool isMoving;
 
     private Animator animator;
+
+    public Transform currentCube;
+    public Transform clickedCube;
+
+    public List<Transform> finalPath = new List<Transform>();
 
 
     private void Awake()
@@ -27,50 +32,85 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("IsWalking", false);
 
+        RayCastDown();
+
         if (isMoving) 
         {
-            MoveToPoint();
-            RotateToTarget();
+            //MoveToPoint();
+            //RotateToTarget();
             animator.SetBool("IsWalking", true);
         }
     }
-    
+
     public void OnMouseClick(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            Vector2 screenPosition = Mouse.current.position.ReadValue();
-            // Debug.Log(position);
+            Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition); RaycastHit mouseHit;
 
-            Ray ray = mainCamera.ScreenPointToRay(screenPosition);
-            if (Physics.Raycast(ray, out RaycastHit hit))
+            if (Physics.Raycast(mouseRay, out mouseHit))
             {
-                targetPosition = hit.point;
-                isMoving = true;
+                if (mouseHit.transform.GetComponent<Walkable>() != null)
+                {
+                    clickedCube = mouseHit.transform;
+                    finalPath.Clear();
+                    GameManager.instance.Player.pathfinder.FindPath();
+                }
             }
         }
     }
 
-    private void MoveToPoint()
+    public void RayCastDown()
     {
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+        Ray playerRay = new Ray(transform.GetChild(0).position, -transform.up);
+        RaycastHit playerHit;
+
+        if (Physics.Raycast(playerRay, out playerHit))
         {
-            isMoving = false;
+            if (playerHit.transform.GetComponent<Walkable>() != null)
+            {
+                currentCube = playerHit.transform;
+            }
         }
     }
 
-    private void RotateToTarget()
-    {
-        Vector3 direction = (targetPosition - transform.position).normalized;
+    //public void OnMouseClick(InputAction.CallbackContext context)
+    //{
+    //    if (context.performed)
+    //    {
+    //        Vector2 screenPosition = Mouse.current.position.ReadValue();
+    //        // Debug.Log(position);
 
-        if (direction != Vector3.zero)
-        {
-            // 목표 방향으로 회전 후 180도 추가 회전
-            Quaternion targetRotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0f, 180f, 0f);
+    //        Ray ray = mainCamera.ScreenPointToRay(screenPosition);
+    //        if (Physics.Raycast(ray, out RaycastHit hit))
+    //        {
+    //            targetPosition = hit.point;
+    //            isMoving = true;
+    //        }
+    //    }
+    //}
 
-            transform.rotation = targetRotation;
-        }
-    }
+    //private void MoveToPoint()
+    //{
+    //    transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+
+    //    if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+    //    {
+    //        isMoving = false;
+    //    }
+    //}
+
+    //private void RotateToTarget()
+    //{
+    //    Vector3 direction = (targetPosition - transform.position).normalized;
+
+    //    if (direction != Vector3.zero)
+    //    {
+    //        // 목표 방향으로 회전 후 180도 추가 회전
+    //        Quaternion targetRotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0f, 180f, 0f);
+
+    //        transform.rotation = targetRotation;
+    //    }
+    //}
 }

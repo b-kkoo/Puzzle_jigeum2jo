@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public UIManager UIManager { get; set; }
     public SoundManager SoundManager { get; set; }
+    public Player Player { get; set; }
 
     [SerializeField] private GameObject uIManagerPrefab;
     [SerializeField] private GameObject soundManagerPrefab;
