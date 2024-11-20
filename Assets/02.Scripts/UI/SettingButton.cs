@@ -8,6 +8,7 @@ public class SettingButton : UIBase
 
     public void ShowMenu()
     {
+        GameManager.instance.UIManager.TimeTogle();
         ShowSoundCanvas();
         ShowMenuCanvas();
     }
@@ -22,7 +23,7 @@ public class SettingButton : UIBase
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex != 0)
         {
-            GameManager.instance.UIManager.Toggle("MenuCanvas");
+            GameManager.instance.UIManager.Toggle("InGameCanvas");
         }
     }
 }

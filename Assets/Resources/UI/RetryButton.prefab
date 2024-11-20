@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2304699069773522254}
   - component: {fileID: 601272286066749356}
   - component: {fileID: 8912870113999353469}
+  - component: {fileID: 1691886667171885023}
   m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
@@ -123,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8912870113999353469}
         m_TargetAssemblyTypeName: RetryButton, Assembly-CSharp
-        m_MethodName: Retry
+        m_MethodName: OnRetryButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -143,5 +144,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9709164f5aecb7d4e986c1d6554a3c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1691886667171885023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86848423887528689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d7d5df0042583146a5a978dcbfdb5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
