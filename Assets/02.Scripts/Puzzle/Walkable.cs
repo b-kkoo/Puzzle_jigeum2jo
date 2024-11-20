@@ -8,6 +8,7 @@ public class Walkable : MonoBehaviour
     public float stairOffset = 0.4f;
 
     public bool isStair = false;
+    public bool dontRotate;
 
     public Transform previousBlock;
 
