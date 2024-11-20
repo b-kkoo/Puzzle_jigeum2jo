@@ -9,6 +9,8 @@ public class Walkable : MonoBehaviour
 
     public bool isStair = false;
 
+    public Transform previousBlock;
+
     public List<WalkPath> possiblePaths = new List<WalkPath>();
 
     public Vector3 GetWalkPoint()
