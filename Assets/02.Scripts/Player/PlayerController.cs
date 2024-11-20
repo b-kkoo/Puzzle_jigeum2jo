@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
 
+    public Transform currentCube;
+    public Transform clickedCube;
+
+    public List<Transform> finalPath = new List<Transform>();
+
 
     private void Awake()
     {
@@ -47,8 +52,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (mouseHit.transform.GetComponent<Walkable>() != null)
                 {
-                    GameManager.instance.Player.pathfinder.clickedCube = mouseHit.transform;
-                    GameManager.instance.Player.pathfinder.finalPath.Clear();
+                    clickedCube = mouseHit.transform;
+                    finalPath.Clear();
                     GameManager.instance.Player.pathfinder.FindPath();
                 }
             }
@@ -65,7 +70,7 @@ public class PlayerController : MonoBehaviour
         {
             if (playerHit.transform.GetComponent<Walkable>() != null)
             {
-                GameManager.instance.Player.pathfinder.currentCube = playerHit.transform;
+                currentCube = playerHit.transform;
             }
         }
     }

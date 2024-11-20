@@ -5,26 +5,21 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
-    public Transform currentCube;
-    public Transform clickedCube;
-
-    public List<Transform> finalPath = new List<Transform>();
-
     public void FindPath()
     {
         List<Transform> nextCubes = new List<Transform>();
         List<Transform> pastCubes = new List<Transform>();
 
-        foreach (WalkPath path in currentCube.GetComponent<Walkable>().possiblePaths)
+        foreach (WalkPath path in GameManager.instance.Player.controller.currentCube.GetComponent<Walkable>().possiblePaths)
         {
             if (path.active)
             {
                 nextCubes.Add(path.target);
-                path.target.GetComponent<Walkable>().previousBlock = currentCube;
+                path.target.GetComponent<Walkable>().previousBlock = GameManager.instance.Player.controller.currentCube;
             }
         }
 
-        pastCubes.Add(currentCube);
+        pastCubes.Add(GameManager.instance.Player.controller.currentCube);
 
         ExploreCube(nextCubes, pastCubes);
         BuildPath();
@@ -35,7 +30,7 @@ public class Pathfinder : MonoBehaviour
         Transform current = nextCubes.First();
         nextCubes.Remove(current);
 
-        if (current == clickedCube)
+        if (current == GameManager.instance.Player.controller.clickedCube)
         {
             return;
         }
@@ -59,17 +54,17 @@ public class Pathfinder : MonoBehaviour
 
     public void BuildPath()
     {
-        Transform cube = clickedCube;
-        while (cube != currentCube)
+        Transform cube = GameManager.instance.Player.controller.clickedCube;
+        while (cube != GameManager.instance.Player.controller.currentCube)
         {
-            finalPath.Add(cube);
+            GameManager.instance.Player.controller.finalPath.Add(cube);
             if (cube.GetComponent<Walkable>().previousBlock != null)
                 cube = cube.GetComponent<Walkable>().previousBlock;
             else
                 return;
         }
 
-        finalPath.Insert(0, clickedCube);
+        GameManager.instance.Player.controller.finalPath.Insert(0, GameManager.instance.Player.controller.clickedCube);
 
         FollowPath();
     }
@@ -78,9 +73,9 @@ public class Pathfinder : MonoBehaviour
     {
         GameManager.instance.Player.controller.isMoving = true;
 
-        for (int i = finalPath.Count - 1; i > 0; i--)
+        for (int i = GameManager.instance.Player.controller.finalPath.Count - 1; i > 0; i--)
         {
-            float time = finalPath[i].GetComponent<Walkable>().isStair ? 1.5f : 1;
+            float time = GameManager.instance.Player.controller.finalPath[i].GetComponent<Walkable>().isStair ? 1.5f : 1;
             //¿Ãµø
         }
     }
