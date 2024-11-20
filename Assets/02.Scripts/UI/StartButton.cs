@@ -17,7 +17,7 @@ public class StartButton : UIBase
             GameManager.instance.UIManager.ClearDestroyUI();
             GameManager.instance.UIManager.Show("MenuCanvas");
         }
-        
+
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
