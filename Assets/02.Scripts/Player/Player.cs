@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PlayerController controller;
+    public Pathfinder pathfinder;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        GameManager.instance.Player = this;
+        controller = GetComponent<PlayerController>();
+        pathfinder = GetComponent<Pathfinder>();
     }
 }
