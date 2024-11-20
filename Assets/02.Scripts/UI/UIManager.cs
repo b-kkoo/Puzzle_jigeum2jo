@@ -22,11 +22,13 @@ public class UIManager : MonoBehaviour
     public void Show(string uiName)
     {
         GameObject go = Resources.Load<GameObject>("UI/" + uiName);
-
+        // 폴더에서 찾은것을 go에 저장
         GameObject ui = Instantiate(go);
+        // go에 저장한것을 복제
         ui.name = ui.name.Replace("(Clone)", "");
         
         uiList.Add(ui);
+        //ui를 uiList에 Add
     }
     // UI 토글
     
@@ -40,11 +42,12 @@ public class UIManager : MonoBehaviour
     public void Toggle(string uiName)
     {
         GameObject obj = uiList.Find(obj => obj.name == uiName);
-        if (obj == null)
+        //uiList에 넣은 obj 찾고
+        if (obj == null) // 없으면 생성
         {
-            Show(uiName); // 없으면 생성
+            Show(uiName); 
         }
-        else
+        else //있으면 없애
         {
             Hide(uiName);
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SettingButton : MonoBehaviour
+public class SettingButton : UIBase
 {
 
     public void ShowMenu()

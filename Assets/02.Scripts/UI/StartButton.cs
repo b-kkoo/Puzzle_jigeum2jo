@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class StartButton : MonoBehaviour
+public class StartButton : UIBase
 {
     public void StartGameButton()
     {
