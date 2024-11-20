@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Time.timeScale);
+        /*Debug.Log(Time.timeScale);*/
     }
 
     private void Awake()
@@ -44,12 +44,12 @@ public class UIManager : MonoBehaviour
     }
     public void Toggle(string uiName)
     {
-        Debug.Log(uiList.Count);
+        /*Debug.Log(uiList.Count);
         for (int i = 0; i < uiList.Count; i++)
         {
             Debug.Log(uiList[i].name);
 
-        }
+        }*/
         UIBase go = uiList.Find(obj => obj.name == uiName);
         
         //uiList에 넣은 obj 찾고

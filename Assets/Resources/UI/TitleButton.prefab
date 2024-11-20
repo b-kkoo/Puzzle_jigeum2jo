@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4266954082595887756}
         m_TargetAssemblyTypeName: TitleButton, Assembly-CSharp
-        m_MethodName: Title
+        m_MethodName: OnTitleButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
