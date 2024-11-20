@@ -3,10 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TitleButton : MonoBehaviour
+public class TitleButton : UIBase
 {
-    public void Title()
+    public void OnTitleButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(0); // 타이틀로
+        SceneManager.sceneLoaded += Title;
     }
+    public void Title(Scene scene, LoadSceneMode mode)
+    {
+        GameManager.instance.UIManager.ClearDestroyUI();
+        SceneManager.sceneLoaded -= Title;
+    }
+    
 }

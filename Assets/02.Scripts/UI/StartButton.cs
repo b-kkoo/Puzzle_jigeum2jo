@@ -1,13 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
 
-public class StartButton : MonoBehaviour
+
+public class StartButton : UIBase
 {
     public void StartGameButton()
     {
-        SceneManager.LoadScene("MapTestScene"); // 게임 씬으로 이동
+        SceneManager.LoadScene(1); // 게임 씬으로 이동
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.buildIndex != 0) // 게임씬일때
+        {
+            GameManager.instance.UIManager.ClearDestroyUI();
+            GameManager.instance.UIManager.Show("MenuCanvas");
+        }
+        
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
