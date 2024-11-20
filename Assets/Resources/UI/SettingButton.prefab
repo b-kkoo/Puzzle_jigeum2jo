@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 7351034800769283855}
   - component: {fileID: 3873951592927770063}
   - component: {fileID: 5004610126309738698}
-  - component: {fileID: -7774063792288858033}
+  - component: {fileID: 4687949443642801916}
   m_Layer: 5
   m_Name: SettingButton
   m_TagString: Untagged
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -7774063792288858033}
+      - m_Target: {fileID: 4687949443642801916}
         m_TargetAssemblyTypeName: SettingButton, Assembly-CSharp
         m_MethodName: ShowMenu
         m_Mode: 1
@@ -269,7 +269,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-7774063792288858033
+--- !u!114 &4687949443642801916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,6 +278,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2303941925145864203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 318fb7784375d0346bf85c253abb9d3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0745e89d0049ebf4db2acb470ca3f6ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

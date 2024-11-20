@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 /*public enum SceneIndex
 {
@@ -10,38 +9,44 @@ using UnityEngine.SceneManagement;
 }*/
 public class UIManager : MonoBehaviour
 {
-    [SerializeField ]List<GameObject> uiList = new List<GameObject>();
     [SerializeField] private Transform Canvas;
+    
+    private List<GameObject> uiList = new List<GameObject>();
 
     public static UIManager instance;
     private void Awake()
     { 
-        /*if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }*/
         GameManager.instance.UIManager = this;
     }
    
-    public GameObject Show(string uiName)
+    public void Show(string uiName)
     {
-        GameObject go = uiList.Find(obj => obj.name == uiName);
-        
-        /*GameObject existingUI = GameObject.Find(uiName);
-        if (existingUI != null)
-        {
-            return existingUI; // 이미 존재하면 해당 UI 반환
-        }*/
+        GameObject go = Resources.Load<GameObject>("UI/" + uiName);
 
-        // 새로 인스턴스화
-        GameObject instantiatedUI = Instantiate(go);
-        instantiatedUI.name = uiName; // 이름 지정 (복제본 방지)
-        //Instantiate(go);
-        return instantiatedUI;
+        GameObject ui = Instantiate(go);
+        ui.name = ui.name.Replace("(Clone)", "");
+        
+        uiList.Add(ui);
+    }
+    // UI 토글
+    
+    public void Hide(string uiName)
+    {
+        GameObject obj = uiList.Find(obj => obj.name == uiName);
+        
+        uiList.Remove(obj);
+        Destroy(obj);
+    }
+    public void Toggle(string uiName)
+    {
+        GameObject obj = uiList.Find(obj => obj.name == uiName);
+        if (obj == null)
+        {
+            Show(uiName); // 없으면 생성
+        }
+        else
+        {
+            Hide(uiName);
+        }
     }
 }
