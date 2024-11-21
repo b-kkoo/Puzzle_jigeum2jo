@@ -9,8 +9,8 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField][Range(0f, 1f)] private float musicVolume;
-    [SerializeField][Range(0f, 1f)] private float effectVolume;
+    [SerializeField][Range(0f, 1f)] private float musicVolume = 0.5f;
+    [SerializeField][Range(0f, 1f)] private float effectVolume = 0.5f;
     
     public Slider backGroundMusicSlider;
     public Slider effectVolumeSlider;
@@ -19,14 +19,14 @@ public class SoundManager : MonoBehaviour
     public AudioSource GameAudioSource;
     public AudioClip mainMusicClip;
     public AudioClip InGameMusicClip;
-    
-    
-    void Awake()
+   
+
+    void Start()
     {
         GameManager.instance.SoundManager = this;
-        
         audioSource = GetComponent<AudioSource>();
         GameAudioSource = GameManager.instance.GetComponent<AudioSource>();
+        
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
@@ -45,11 +45,6 @@ public class SoundManager : MonoBehaviour
         PlayMusic(mainMusicClip);
     }
 
-    private void Update()
-    {
-        ChangeVolume();
-    }
-
     public void ChangeVolume() //Awake에서 받아오는 오디오소스가 null이 뜨는 이유???
     {
         musicVolume = backGroundMusicSlider.value;
@@ -61,16 +56,11 @@ public class SoundManager : MonoBehaviour
         GameAudioSource.volume = effectVolume;
     }
 
-    public void OnStartBtn()
-    {
-        PlayMusic(InGameMusicClip);
-    }
-
     public void PlayMusic(AudioClip music)
     {
         audioSource.Stop();
         audioSource.clip = music;
         audioSource.Play();
-        
+        audioSource.loop = true;
     }
 }

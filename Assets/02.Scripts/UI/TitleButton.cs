@@ -5,6 +5,7 @@ public class TitleButton : UIBase
     public void OnTitleButton()
     {
         SceneManager.LoadScene(0); // 타이틀로
+        GameManager.instance.SoundManager.PlayMusic(GameManager.instance.SoundManager.mainMusicClip);
         SceneManager.sceneLoaded += Title;
         GameManager.instance.UIManager.OnTime();
     }
