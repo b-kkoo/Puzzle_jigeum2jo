@@ -47,14 +47,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicVolume: 0.5
   effectVolume: 0.5
-  backGroundMusicSlider: {fileID: 3556655260357340216, guid: ca945cb8a523ded43aeb60a4cae76c74,
-    type: 3}
-  effectVolumeSlider: {fileID: 7140222144347560180, guid: 1f79bf22a01679c4e808273fc73bf67c,
-    type: 3}
   audioSource: {fileID: 0}
   GameAudioSource: {fileID: 0}
   mainMusicClip: {fileID: 8300000, guid: b6446132c76679e4288c580f181b7bb3, type: 3}
-  InGameMusicClip: {fileID: 8300000, guid: 49ecc9fdd1d5ea6499b52632fea8723a, type: 3}
+  inGameMusicClip: {fileID: 8300000, guid: 49ecc9fdd1d5ea6499b52632fea8723a, type: 3}
+  clickSFXClip: {fileID: 8300000, guid: b34435683d36c4d43af913eb1139fcd8, type: 3}
 --- !u!82 &4110245310758086575
 AudioSource:
   m_ObjectHideFlags: 0
