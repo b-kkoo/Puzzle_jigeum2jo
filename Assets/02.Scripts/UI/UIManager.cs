@@ -25,10 +25,6 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         GameManager.instance.UIManager.Show("StartCanvas");
-        //GameManager.instance.UIManager.Show("MenuCanvas");
-        
-        //TODO : 어짜피 인게임에서 일시정지를 할거니까, 메뉴캔버스는 일단 주석처리 했습니다.
-        //테스트씬에는 별내용이 없어서, 스크립트의 내용을 여기로 옮겼습니다 & 오브젝트랑 스크립트 삭제 했습니다.
     }
 
     public void Show(string uiName)
@@ -60,22 +56,17 @@ public class UIManager : MonoBehaviour
 
         }*/
         UIBase go = uiList.Find(obj => obj.name == uiName);
-        
+
         //uiList에 넣은 obj 찾고
         if (go == null) // 없으면 생성
         {
-            Show(uiName); 
+            Show(uiName);
             go = uiList.Find(obj => obj.name == uiName);
         }
         else //있으면 없애
         {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            if (currentSceneIndex == 0)
-            {
-                Hide(uiName);
-            }
+            Hide(uiName);
         }
-        
     }
 
     /// <summary>
