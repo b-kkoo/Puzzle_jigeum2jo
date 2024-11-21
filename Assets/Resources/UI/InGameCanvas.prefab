@@ -259,7 +259,7 @@ MonoBehaviour:
       - m_Target: {fileID: 4687949443642801916, guid: 98f80e5e06aee2e42aed2f2f1326f5d5,
           type: 3}
         m_TargetAssemblyTypeName: SettingButton, Assembly-CSharp
-        m_MethodName: ShowMenu
+        m_MethodName: HideMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -301,11 +301,11 @@ RectTransform:
   - {fileID: 6736382109545171119}
   m_Father: {fileID: 2856509172175254992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 1920, y: 300}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &8552066739272104303
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +679,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2856509172175254992}
     m_Modifications:
+    - target: {fileID: 542245604623670610, guid: b07a50166e42827459f0928a85eac355,
+        type: 3}
+      propertyPath: m_text
+      value: "\uACC4\uC18D\uD558\uAE30"
+      objectReference: {fileID: 0}
     - target: {fileID: 723732583816105538, guid: b07a50166e42827459f0928a85eac355,
         type: 3}
       propertyPath: m_Name
@@ -804,6 +809,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6722602158727038553, guid: b07a50166e42827459f0928a85eac355,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6523bf926843dbb4e979cedb7370c43e,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

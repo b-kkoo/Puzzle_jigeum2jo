@@ -56,22 +56,17 @@ public class UIManager : MonoBehaviour
 
         }*/
         UIBase go = uiList.Find(obj => obj.name == uiName);
-        
+
         //uiList에 넣은 obj 찾고
         if (go == null) // 없으면 생성
         {
-            Show(uiName); 
+            Show(uiName);
             go = uiList.Find(obj => obj.name == uiName);
         }
         else //있으면 없애
         {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            if (currentSceneIndex == 0)
-            {
-                Hide(uiName);
-            }
+            Hide(uiName);
         }
-        
     }
 
     /// <summary>

@@ -9,7 +9,7 @@ public class RetryButton : MonoBehaviour
   {
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //현재 씬 로드
     SceneManager.sceneLoaded += OnRetry;
-    GameManager.instance.UIManager.Show("MenuCanvas");
+    //GameManager.instance.UIManager.Show("MenuCanvas");
     //메뉴 캔버스가 보이게 했습니다.
     //TODO : 현재씬을 다시로드 하는것 보단, 계속하기(Resume)로 하는게 좋아 보여요! 일시정지버튼도 다시 보여야 할듯 합니다.
   }
