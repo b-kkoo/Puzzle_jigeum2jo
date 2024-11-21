@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/01.Scenes/TitleScene.unity
     guid: 593f19dd2c875094997faa4b47444698
   - enabled: 1
-    path: Assets/01.Scenes/Test/Puzzle2_Inhye.unity
+    path: Assets/01.Scenes/MainGameScene.unity
     guid: f9a88d0219ace264a918b75cbe0c3f89
   m_configObjects: {}
