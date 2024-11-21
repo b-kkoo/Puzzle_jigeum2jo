@@ -79,8 +79,6 @@ public class Pathfinder : MonoBehaviour
 
         GameManager.instance.Player.controller.isMoving = true;
 
-        GameManager.instance.Player.controller.RotateToTarget();
-
         for (int i = GameManager.instance.Player.controller.finalPath.Count - 1; i > 0; i--)
         {
             float time = GameManager.instance.Player.controller.finalPath[i].GetComponent<Walkable>().isStair ? 1.5f : 1;

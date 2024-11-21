@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Walkable : MonoBehaviour
@@ -37,6 +38,17 @@ public class Walkable : MonoBehaviour
             }
             Gizmos.color = path.active ? Color.blue : Color.clear;
             Gizmos.DrawLine(GetWalkPoint(), path.target.GetComponent<Walkable>().GetWalkPoint());
+        }
+    }
+
+    public void EnablePath(Walkable target, bool state)
+    {
+        foreach (WalkPath path in possiblePaths)
+        {
+            if(path.target.Equals(target))
+            {
+                path.active = state;
+            }
         }
     }
 }
