@@ -1,22 +1,12 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private Transform Canvas;
-    
+    private bool isPaused = false;
     private List<UIBase> uiList = new List<UIBase>();
 
     public static UIManager instance;
-
-    private void Update()
-    {
-        /*Debug.Log(Time.timeScale);*/
-    }
-
     private void Awake()
     { 
         GameManager.instance.UIManager = this;
@@ -29,7 +19,6 @@ public class UIManager : MonoBehaviour
 
     public void Show(string uiName)
     {
-        TimeTogle();
         UIBase go = Resources.Load<UIBase>("UI/" + uiName);
         // 폴더에서 찾은것을 go에 저장
         UIBase ui = Instantiate(go);
@@ -41,7 +30,6 @@ public class UIManager : MonoBehaviour
     }
     public void Hide(string uiName)
     {
-        TimeTogle();
         UIBase go = uiList.Find(obj => obj.name == uiName);
         
         uiList.Remove(go);
@@ -49,15 +37,9 @@ public class UIManager : MonoBehaviour
     }
     public void Toggle(string uiName)
     {
-        /*Debug.Log(uiList.Count);
-        for (int i = 0; i < uiList.Count; i++)
-        {
-            Debug.Log(uiList[i].name);
-
-        }*/
         UIBase go = uiList.Find(obj => obj.name == uiName);
 
-        //uiList에 넣은 obj 찾고
+        //uiList에 넣은 go 찾고
         if (go == null) // 없으면 생성
         {
             Show(uiName);
@@ -74,10 +56,17 @@ public class UIManager : MonoBehaviour
     /// </summary>
     public void TimeTogle()
     {
-        Time.timeScale = (Time.timeScale <= 0.9 ? 0f : 1f);
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0f : 1f;
+    }
+
+    public void OnTime()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
     }
     
-    public void ClearDestroyUI()
+    public void ClearDestroyUI() // 모든 UI를 디스트로이
     {
         uiList.RemoveAll(ui => ui == null);
     }
