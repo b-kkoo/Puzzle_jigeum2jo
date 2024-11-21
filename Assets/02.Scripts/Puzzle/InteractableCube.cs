@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class InteractableCube : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private bool gameOverOnTrigger;
+    [SerializeField] private bool gameClearOnTrigger;
+    [SerializeField] private GameObject iCube;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            if (gameClearOnTrigger)
+            {
+                GameManager.instance.GameClear();
+            }
+
+            if (gameOverOnTrigger)
+            {
+                GameManager.instance.GameOver();
+            }
+        }
     }
 }
