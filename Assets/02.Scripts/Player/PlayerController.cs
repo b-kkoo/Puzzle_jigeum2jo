@@ -75,6 +75,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void RotateToTarget()
+    {
+        Vector3 direction = (targetPosition - transform.position).normalized;
+
+        if (direction != Vector3.zero)
+        {
+            // 목표 방향으로 회전 후 180도 추가 회전
+            Quaternion targetRotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0f, 180f, 0f);
+
+            transform.rotation = targetRotation;
+        }
+    }
     //public void OnMouseClick(InputAction.CallbackContext context)
     //{
     //    if (context.performed)
@@ -98,19 +110,6 @@ public class PlayerController : MonoBehaviour
     //    if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
     //    {
     //        isMoving = false;
-    //    }
-    //}
-
-    //private void RotateToTarget()
-    //{
-    //    Vector3 direction = (targetPosition - transform.position).normalized;
-
-    //    if (direction != Vector3.zero)
-    //    {
-    //        // 목표 방향으로 회전 후 180도 추가 회전
-    //        Quaternion targetRotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0f, 180f, 0f);
-
-    //        transform.rotation = targetRotation;
     //    }
     //}
 }
