@@ -48,7 +48,7 @@ public class SoundManager : MonoBehaviour
         {
             GameAudioSource = GameManager.instance.gameObject.GetComponent<AudioSource>();
         }
-        effectVolume = volume;
+        GameAudioSource.volume = volume;
     }
 
     public void PlayMusic(AudioClip music)
