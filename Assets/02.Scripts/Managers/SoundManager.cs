@@ -15,7 +15,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource GameAudioSource;
     public AudioClip mainMusicClip;
-    public AudioClip InGameMusicClip;
+    public AudioClip inGameMusicClip;
+    public AudioClip clickSFXClip;
    
 
     void Start()
@@ -56,5 +57,12 @@ public class SoundManager : MonoBehaviour
         audioSource.clip = music;
         audioSource.Play();
         audioSource.loop = true;
+    }
+
+    public void EffectSound(AudioClip Clip)
+    {
+        GameAudioSource.Stop();
+        GameAudioSource.clip = Clip;
+        GameAudioSource.PlayOneShot(Clip);
     }
 }

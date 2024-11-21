@@ -5,7 +5,7 @@ public class StartButton : UIBase
     public void StartGameButton()
     {
         SceneManager.LoadScene(1); // 게임 씬으로 이동
-        GameManager.instance.SoundManager.PlayMusic(GameManager.instance.SoundManager.InGameMusicClip);
+        GameManager.instance.SoundManager.PlayMusic(GameManager.instance.SoundManager.inGameMusicClip);
         SceneManager.sceneLoaded += OnSceneLoaded;
         GameManager.instance.UIManager.OnTime();
     }
