@@ -45,15 +45,18 @@ public class SoundManager : MonoBehaviour
         PlayMusic(mainMusicClip);
     }
 
-    public void ChangeVolume() //Awake에서 받아오는 오디오소스가 null이 뜨는 이유???
+    public void ChangeVolume(float volume) //Awake에서 받아오는 오디오소스가 null이 뜨는 이유???
     {
-        musicVolume = backGroundMusicSlider.value;
-        audioSource.volume = musicVolume;
+        if (audioSource == null)
+        {
+            audioSource = gameObject.GetComponent<AudioSource>();
+        }
+        audioSource.volume = volume;
+        //musicVolume = backGroundMusicSlider.value;
     }
-    public void ChangeEffectVolume() //Awake에서 받아오는 오디오소스가 null이 뜨는 이유???
+    public void ChangeEffectVolume(float volume) //Awake에서 받아오는 오디오소스가 null이 뜨는 이유???
     {
-        effectVolume = effectVolumeSlider.value;
-        GameAudioSource.volume = effectVolume;
+        effectVolume = volume;
     }
 
     public void PlayMusic(AudioClip music)

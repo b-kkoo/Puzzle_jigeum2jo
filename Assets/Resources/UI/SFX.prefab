@@ -96,7 +96,7 @@ MonoBehaviour:
           type: 3}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: ChangeEffectVolume
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
