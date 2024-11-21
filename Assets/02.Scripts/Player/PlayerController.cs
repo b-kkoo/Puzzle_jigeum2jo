@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
     public void RayCastDown()
     {
 
-        Ray playerRay = new Ray(transform.GetChild(0).position, -transform.up);
+        Ray playerRay = new Ray(transform.GetChild(0).position + (Vector3.one * 0.1f), -transform.up);
         RaycastHit playerHit;
 
         if (Physics.Raycast(playerRay, out playerHit))
@@ -75,18 +75,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void RotateToTarget()
-    {
-        Vector3 direction = (targetPosition - transform.position).normalized;
+    //public void RotateToTarget()
+    //{
+    //    Vector3 direction = (targetPosition - transform.position).normalized;
 
-        if (direction != Vector3.zero)
-        {
-            // 목표 방향으로 회전 후 180도 추가 회전
-            Quaternion targetRotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0f, 180f, 0f);
+    //    if (direction != Vector3.zero)
+    //    {
+    //        // 목표 방향으로 회전 후 180도 추가 회전
+    //        Quaternion targetRotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0f, 180f, 0f);
 
-            transform.rotation = targetRotation;
-        }
-    }
+    //        transform.rotation = targetRotation;
+    //    }
+    //}
     //public void OnMouseClick(InputAction.CallbackContext context)
     //{
     //    if (context.performed)
