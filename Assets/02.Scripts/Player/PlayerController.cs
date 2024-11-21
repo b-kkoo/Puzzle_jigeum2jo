@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     public void OnMouseClick(InputAction.CallbackContext context)
     {
+        GameManager.instance.SoundManager.EffectSound(GameManager.instance.SoundManager.clickSFXClip);
+
         if (context.performed)
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition); RaycastHit mouseHit;
@@ -56,7 +58,6 @@ public class PlayerController : MonoBehaviour
 
     public void RayCastDown()
     {
-
         Ray playerRay = new Ray(transform.GetChild(0).position + (Vector3.one * 0.1f), -transform.up);
         RaycastHit playerHit;
 
