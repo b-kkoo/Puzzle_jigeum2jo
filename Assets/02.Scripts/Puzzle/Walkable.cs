@@ -45,10 +45,10 @@ public class Walkable : MonoBehaviour
     {
         foreach (WalkPath path in possiblePaths)
         {
-            if(path.target.Equals(target))
-            {
+            //if(path.target.Equals(target))
+            //{
                 path.active = state;
-            }
+            //}
         }
     }
 }
