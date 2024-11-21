@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4739149469241928426}
   - component: {fileID: 7140222144347560180}
+  - component: {fileID: -3749385450567646323}
   m_Layer: 5
   m_Name: SFX
   m_TagString: Untagged
@@ -91,20 +92,22 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8900417038088436850, guid: 1774b8fcb7442264abdf52864d8bd8ac,
-          type: 3}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: ChangeEffectVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &-3749385450567646323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325829241743114044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b9a6cd572b1ac40b2347755a828d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backGroundMusicSlider: {fileID: 3556655260357340216, guid: ca945cb8a523ded43aeb60a4cae76c74,
+    type: 3}
+  effectVolumeSlider: {fileID: 7140222144347560180}
 --- !u!1 &1353815155116915553
 GameObject:
   m_ObjectHideFlags: 0

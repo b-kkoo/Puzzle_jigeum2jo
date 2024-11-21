@@ -481,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8387450423782215833}
   - component: {fileID: 3556655260357340216}
+  - component: {fileID: 190978951900491296}
   m_Layer: 5
   m_Name: BGM
   m_TagString: Untagged
@@ -562,20 +563,22 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8900417038088436850, guid: 1774b8fcb7442264abdf52864d8bd8ac,
-          type: 3}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: ChangeVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &190978951900491296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8327509488252947968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b9a6cd572b1ac40b2347755a828d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backGroundMusicSlider: {fileID: 3556655260357340216}
+  effectVolumeSlider: {fileID: 7140222144347560180, guid: 1f79bf22a01679c4e808273fc73bf67c,
+    type: 3}
 --- !u!1 &8525972771887985997
 GameObject:
   m_ObjectHideFlags: 0

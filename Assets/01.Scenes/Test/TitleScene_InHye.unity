@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad24b80e020b32e4bb25bb41887c2ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uIManagerPrefab: {fileID: 2826691891168103985, guid: ee4ce4cfa91bd6046b3bb11a0b7388e9,
+  uIManagerPrefab: {fileID: 100646203237868518, guid: c07cd941d331c784db30c213a8dcbab5,
     type: 3}
   soundManagerPrefab: {fileID: 845529063487793875, guid: 1774b8fcb7442264abdf52864d8bd8ac,
     type: 3}
