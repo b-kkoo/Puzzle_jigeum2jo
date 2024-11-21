@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private Transform Canvas;
@@ -14,7 +16,10 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        GameManager.instance.UIManager.Show("StartCanvas");
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            GameManager.instance.UIManager.Show("StartCanvas");
+        }
     }
 
     public void Show(string uiName)
