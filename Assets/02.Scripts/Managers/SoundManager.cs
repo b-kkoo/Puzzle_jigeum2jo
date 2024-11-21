@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
@@ -12,7 +13,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField][Range(0f, 1f)] private float effectVolume;
     
     public Slider backGroundMusicSlider;
-    public Slider effectVoulemSlider;
+    public Slider effectVolumeSlider;
     
     public AudioSource audioSource;
     public AudioSource GameAudioSource;
@@ -32,18 +33,15 @@ public class SoundManager : MonoBehaviour
         }
         if (GameAudioSource == null)
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
+            GameAudioSource = GameManager.instance.gameObject.AddComponent<AudioSource>();
         }
         
         audioSource.volume = musicVolume; //볼륨 초기화
         backGroundMusicSlider.value = audioSource.volume;
 
         GameAudioSource.volume = effectVolume;
-        effectVoulemSlider.value = GameAudioSource.volume;
-    }
-
-    private void Start()
-    {
+        effectVolumeSlider.value = GameAudioSource.volume;
+        
         PlayMusic(mainMusicClip);
     }
 
@@ -57,13 +55,15 @@ public class SoundManager : MonoBehaviour
         musicVolume = backGroundMusicSlider.value;
         audioSource.volume = musicVolume;
     }
+    public void ChangeEffectVolume() //Awake에서 받아오는 오디오소스가 null이 뜨는 이유???
+    {
+        effectVolume = effectVolumeSlider.value;
+        GameAudioSource.volume = effectVolume;
+    }
 
     public void OnStartBtn()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 1) // 게임씬일때
-        {
-            PlayMusic(InGameMusicClip);
-        }
+        PlayMusic(InGameMusicClip);
     }
 
     public void PlayMusic(AudioClip music)
@@ -71,5 +71,6 @@ public class SoundManager : MonoBehaviour
         audioSource.Stop();
         audioSource.clip = music;
         audioSource.Play();
+        
     }
 }
