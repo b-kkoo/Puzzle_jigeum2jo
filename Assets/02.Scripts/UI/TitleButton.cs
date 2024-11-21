@@ -13,6 +13,7 @@ public class TitleButton : UIBase
     public void Title(Scene scene, LoadSceneMode mode)
     {
         GameManager.instance.UIManager.ClearDestroyUI();
+        GameManager.instance.UIManager.Show("StartCanvas");
         SceneManager.sceneLoaded -= Title;
     }
     
