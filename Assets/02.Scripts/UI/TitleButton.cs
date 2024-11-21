@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TitleButton : UIBase
@@ -9,6 +6,7 @@ public class TitleButton : UIBase
     {
         SceneManager.LoadScene(0); // 타이틀로
         SceneManager.sceneLoaded += Title;
+        GameManager.instance.UIManager.OnTime();
     }
     public void Title(Scene scene, LoadSceneMode mode)
     {
