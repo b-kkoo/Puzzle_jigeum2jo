@@ -1,10 +1,6 @@
 using DG.Tweening;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using TMPro;
-
-//using Unity.VisualScripting;
 using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
@@ -56,7 +52,7 @@ public class Pathfinder : MonoBehaviour
         }
     }
 
-    public void BuildPath()
+    public void BuildPath() // 경로 생성
     {
         Transform cube = GameManager.instance.Player.controller.clickedCube;
         while (cube != GameManager.instance.Player.controller.currentCube)
@@ -73,7 +69,7 @@ public class Pathfinder : MonoBehaviour
         FollowPath();
     }
 
-    public void FollowPath()
+    public void FollowPath() // 생성한 경로를 통해 이동
     {
         Sequence s = DOTween.Sequence();
 
