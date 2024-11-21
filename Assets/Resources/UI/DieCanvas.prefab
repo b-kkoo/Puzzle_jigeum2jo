@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8918500043211444498}
         m_TargetAssemblyTypeName: RetryButton, Assembly-CSharp
-        m_MethodName: Retry
+        m_MethodName: OnRetryButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -270,7 +270,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4798069661802613744}
         m_TargetAssemblyTypeName: TitleButton, Assembly-CSharp
-        m_MethodName: Title
+        m_MethodName: OnTitleButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -701,7 +701,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &4428887252061682417
 MonoBehaviour:
