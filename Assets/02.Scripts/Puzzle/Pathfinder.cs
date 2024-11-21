@@ -1,4 +1,4 @@
-using DG.Tweening;
+ï»¿using DG.Tweening;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -52,7 +52,7 @@ public class Pathfinder : MonoBehaviour
         }
     }
 
-    public void BuildPath() // °æ·Î »ı¼º
+    public void BuildPath() // ê²½ë¡œ ìƒì„±
     {
         Transform cube = GameManager.instance.Player.controller.clickedCube;
         while (cube != GameManager.instance.Player.controller.currentCube)
@@ -69,7 +69,7 @@ public class Pathfinder : MonoBehaviour
         FollowPath();
     }
 
-    public void FollowPath() // »ı¼ºÇÑ °æ·Î¸¦ ÅëÇØ ÀÌµ¿
+    public void FollowPath() // ìƒì„±í•œ ê²½ë¡œë¥¼ í†µí•´ ì´ë™
     {
         Sequence s = DOTween.Sequence();
 

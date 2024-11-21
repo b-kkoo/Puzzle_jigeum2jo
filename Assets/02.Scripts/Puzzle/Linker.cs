@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -6,10 +6,10 @@ using UnityEngine;
 [System.Serializable]
 public class RotationLink
 {
-    // È¸ÀüÀ» Ã¼Å©ÇÒ transform
+    // íšŒì „ì„ ì²´í¬í•  transform
     public Transform linkedTransform;
 
-    // ¸µÅ© È°¼ºÈ­¸¦ À§ÇÑ ¿ÀÀÏ·¯ °¢µµ
+    // ë§í¬ í™œì„±í™”ë¥¼ ìœ„í•œ ì˜¤ì¼ëŸ¬ ê°ë„
     public Vector3 activeEulerAngle;
     [Header("Path to Link")]
     public Walkable pathA;
@@ -20,7 +20,7 @@ public class Linker : MonoBehaviour
 {
     [SerializeField] public RotationLink[] rotationLinks;
 
-    // ÀÌ¿ôÇÏ´Â Å¥ºê »çÀÌ pathÀÇ active »óÅÂ¸¦ toggle
+    // ì´ì›ƒí•˜ëŠ” íë¸Œ ì‚¬ì´ pathì˜ active ìƒíƒœë¥¼ toggle
     public void EnableLink(Walkable pathA, Walkable pathB, bool state)
     {
         if (pathA == null || pathB == null)
@@ -30,7 +30,7 @@ public class Linker : MonoBehaviour
         pathB.EnablePath(pathA, state);
     }
 
-    // ¿ÀÀÏ·¯ °¢µµ¿¡ µû¶ó enable/disable
+    // ì˜¤ì¼ëŸ¬ ê°ë„ì— ë”°ë¼ enable/disable
     public void UpdateRotationLinks()
     {
         foreach (RotationLink l in rotationLinks)
@@ -38,11 +38,11 @@ public class Linker : MonoBehaviour
             if (l.linkedTransform == null || l.pathA == null || l.pathB == null)
                 continue;
 
-            // ¿øÇÏ´Â °¢µµ¿Í ÇöÀç °¢µµÀÇ Â÷ÀÌ¸¦ ±¸ÇÔ
+            // ì›í•˜ëŠ” ê°ë„ì™€ í˜„ì¬ ê°ë„ì˜ ì°¨ì´ë¥¼ êµ¬í•¨
             Quaternion targetAngle = Quaternion.Euler(l.activeEulerAngle);
             float angleDiff = Quaternion.Angle(l.linkedTransform.rotation, targetAngle);
 
-            // °¢µµ°¡ ÀÏÄ¡ÇÏ¸é ¸µÅ©¸¦ È°¼ºÈ­, ¾Æ´Ï¶ó¸é ºñÈ°¼ºÈ­
+            // ê°ë„ê°€ ì¼ì¹˜í•˜ë©´ ë§í¬ë¥¼ í™œì„±í™”, ì•„ë‹ˆë¼ë©´ ë¹„í™œì„±í™”
             if (Mathf.Abs(angleDiff) < 0.01f)
             {
                 EnableLink(l.pathA, l.pathB, true);
