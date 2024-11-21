@@ -43,4 +43,15 @@ public class GameManager : MonoBehaviour
             SoundManager = soundManagerObject.GetComponent<SoundManager>();
         }
     }
+
+    public void GameOver()
+    {
+        UIManager.Show("DieCanvas");
+    }
+
+    public void GameClear()
+    {
+        UIManager.Show("ClearCanvas");
+    }
+
 }
