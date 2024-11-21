@@ -19,8 +19,16 @@ public class InteractableCube : MonoBehaviour
 
             if (gameOverOnTrigger)
             {
-                GameManager.instance.GameOver();
+                GameManager.instance.Player.controller.animator.SetBool("Death", true);
+
+                StartCoroutine(CorDelaySetUI());
             }
         }
+    }
+
+    IEnumerator CorDelaySetUI()
+    {
+        yield return new WaitForSeconds(2.5f);
+        GameManager.instance.GameOver();
     }
 }

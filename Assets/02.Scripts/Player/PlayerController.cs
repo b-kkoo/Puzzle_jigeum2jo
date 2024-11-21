@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private Camera mainCamera;
-    private Animator animator;
+    public Animator animator;
 
     public bool isMoving;
 
