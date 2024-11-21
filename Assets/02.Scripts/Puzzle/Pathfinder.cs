@@ -1,6 +1,10 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
+
+//using Unity.VisualScripting;
 using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
@@ -71,12 +75,32 @@ public class Pathfinder : MonoBehaviour
 
     public void FollowPath()
     {
+        Sequence s = DOTween.Sequence();
+
         GameManager.instance.Player.controller.isMoving = true;
+
+        GameManager.instance.Player.controller.RotateToTarget();
 
         for (int i = GameManager.instance.Player.controller.finalPath.Count - 1; i > 0; i--)
         {
             float time = GameManager.instance.Player.controller.finalPath[i].GetComponent<Walkable>().isStair ? 1.5f : 1;
-            //¿Ãµø
+
+            s.Append(transform.DOMove(GameManager.instance.Player.controller.finalPath[i].GetComponent<Walkable>().GetWalkPoint(), .2f * time).SetEase(Ease.Linear));
+
+            if (!GameManager.instance.Player.controller.finalPath[i].GetComponent<Walkable>().dontRotate)
+                s.Join(transform.DOLookAt(GameManager.instance.Player.controller.finalPath[i].position, .1f, AxisConstraint.Y, Vector3.up));
         }
+
+        s.AppendCallback(() => Clear());
+    }
+
+    void Clear()
+    {
+        foreach (Transform t in GameManager.instance.Player.controller.finalPath)
+        {
+            t.GetComponent<Walkable>().previousBlock = null;
+        }
+        GameManager.instance.Player.controller.finalPath.Clear();
+        GameManager.instance.Player.controller.isMoving = false;
     }
 }
