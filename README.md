@@ -21,6 +21,9 @@
 - 패스파인더 로직을 이용한 경로 탐색 및 이동
 <br/> ![112102](https://github.com/user-attachments/assets/2d7caceb-ae0e-4608-a959-d9ed9eb87818)
 
+## UML Diagram
+![Type Dependencies Diagram for Player and other elements](https://github.com/user-attachments/assets/1b29c069-ae32-4e97-aa7d-1400c7a60887)
+
 ## Additional Link
 - 노션 : https://www.notion.so/2-138bb59257da8086a9ecc888baa75b5d
-- 시연영상
+- 시연영상 : https://www.youtube.com/watch?v=MvQ0nDY2Unw
